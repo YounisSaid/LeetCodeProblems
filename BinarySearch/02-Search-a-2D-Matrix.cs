@@ -11,7 +11,8 @@
 public class Solution {
     public bool SearchMatrix(int[][] matrix, int target) {
         int Left =0;
-        int Right = (matrix.Count())-1;
+     int Right = matrix.Count() * matrix[0].Length - 1;
+
         while(Right>=Left)
         {
             int mid = (Right + Left)/2;
